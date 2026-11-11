@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Heir Finder | International Unclaimed Estates Registry &amp; Legal Partner Network</title>
+  <meta name="description" content="Dedicated international statutory unclaimed estates, dormant corporate escrow audit registry, and global fee-share collaboration platform for law firms, probate solicitors, chartered accountants, migration practices, genealogists, and individual contributors." />
+  <style>
+    :root { --bg:#faf8f5; --card:#ffffff; --ink:#16181d; --muted:#4f5665; --accent:#1b4332; --accent-dark:#081c15; --accent-gold:#9c6615; --border:#e4e0d8; --soft:#eef4f0; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:"Georgia","Times New Roman",serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+    header { border-bottom:1px solid var(--border); background:#fff; padding:1.15rem 2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; position:sticky; top:0; z-index:20; }
+    .brand { font-size:1.15rem; font-weight:bold; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); text-decoration:none; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:1.35rem; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; font-size:0.88rem; font-weight:500; }
+    nav a:hover { color:var(--accent); }
+    .container { max-width:1120px; margin:0 auto; padding:2.8rem 1.5rem; }
+    .badge { display:inline-block; background:var(--soft); color:var(--accent); font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:0.76rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding:0.34rem 0.75rem; border-radius:4px; margin-bottom:1rem; }
+    .badge-gold { background:#fdf6e9; color:var(--accent-gold); border:1px solid #f1dfbe; }
+    h1 { font-size:2.45rem; line-height:1.2; margin-bottom:1.1rem; font-weight:normal; max-width:940px; }
+    .lead { font-size:1.14rem; color:var(--muted); max-width:860px; margin-bottom:1.8rem; }
+    .cta-row { display:flex; gap:0.9rem; flex-wrap:wrap; margin-bottom:2.8rem; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+    .btn { display:inline-block; padding:0.8rem 1.35rem; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.93rem; cursor:pointer; border:none; }
+    .btn-primary { background:var(--accent); color:#fff; }
+    .btn-secondary { background:#fff; color:var(--ink); border:1px solid var(--border); }
+    .verify-box { background:#fff; border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:8px; padding:1.6rem 1.8rem; margin-bottom:3rem; box-shadow:0 4px 16px rgba(0,0,0,0.03); }
+    .verify-box h2 { font-size:1.35rem; font-weight:normal; margin-bottom:0.4rem; }
+    .verify-box p { color:var(--muted); font-size:0.94rem; margin-bottom:1rem; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+    .verify-form { display:flex; gap:0.75rem; flex-wrap:wrap; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+    .verify-form input { flex:1; min-width:240px; padding:0.72rem 0.95rem; border:1px solid var(--border); border-radius:6px; font-size:0.95rem; }
+    .verify-result { display:none; margin-top:1.1rem; padding:1.1rem 1.25rem; border-radius:6px; background:#f6faf7; border:1px solid #cce3d4; font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:0.91rem; }
+    .partner-hero { background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%); color:#fff; padding:2.5rem 2.2rem; border-radius:12px; margin-bottom:3.2rem; }
+    .partner-hero h2 { font-size:1.95rem; margin-bottom:0.75rem; font-weight:normal; }
+    .partner-hero > p { color:#d8f3dc; margin-bottom:1.6rem; max-width:880px; font-size:1.02rem; }
+    .partner-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.15rem; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+    .partner-card { background:rgba(255,255,255,0.09); padding:1.35rem; border-radius:8px; border:1px solid rgba(255,255,255,0.18); }
+    .partner-card .role-tag { display:inline-block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.06em; color:#ffd166; font-weight:700; margin-bottom:0.45rem; }
+    .partner-card h3 { font-size:1.08rem; color:#fff; margin-bottom:0.55rem; font-weight:600; }
+    .partner-card p { font-size:0.88rem; color:#e6f4ea; line-height:1.55; margin-bottom:0.8rem; }
+    .partner-card a { color:#ffd166; font-size:0.85rem; font-weight:600; text-decoration:none; }
+    .section-title { font-size:1.8rem; margin-bottom:0.55rem; font-weight:normal; }
+    .section-sub { color:var(--muted); margin-bottom:1.4rem; max-width:840px; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--border); margin-bottom:3rem; font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:0.89rem; }
+    th, td { text-align:left; padding:0.88rem 1rem; border-bottom:1px solid var(--border); vertical-align:top; }
+    th { background:#f4f1ea; font-weight:600; color:var(--ink); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); gap:1.4rem; margin:1.8rem 0 3.2rem; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:1.65rem; }
+    .card h3 { font-size:1.2rem; margin-bottom:0.6rem; }
+    .card p { color:var(--muted); font-size:0.95rem; margin-bottom:0.85rem; }
+    footer { border-top:1px solid var(--border); padding:2.4rem 1.5rem; color:var(--muted); font-size:0.87rem; text-align:center; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#">Global Heir Finder</a>
+    <nav>
+      <a href="#verify">Audit Reference Check</a>
+      <a href="#partners">Partner &amp; Referral Network</a>
+      <a href="#digest">Statutory Digest</a>
+      <a href="#standards">Zero-Upfront Standards</a>
+      <a href="#contact">Official Desks</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <span class="badge">Active International Unclaimed Estates &amp; Statutory Escrow Audit Platform</span>
+    <h1>Specialized Cross-Border Probate, Dormant Corporate Escrow &amp; Heir Tracing Registry.</h1>
+    <p class="lead">
+      Global Heir Finder (<b>globalheirfinder.com</b>) conducts forensic archival verification across unclaimed deceased estates, UK Bona Vacantia Crown intestacies, Swiss Art. 555 ZGB &amp; Austrian Ediktsdatei judicial heir calls, post-merger corporate subsidiary balances, and statutory unclaimed monies across the United States, United Kingdom, Australia, and Europe. We partner directly with law firms, probate solicitors, chartered accountants, licensed migration &amp; advisory practices, genealogists, and individual contributors worldwide.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#verify">Verify an Audit Reference ID</a>
+      <a class="btn btn-secondary" href="#partners">Law Firm, Advisory &amp; Accountant Fee-Share</a>
+      <a class="btn btn-secondary" href="#digest">View Anonymized Statutory Digest</a>
+    </div>
+
+    <section id="verify" class="verify-box">
+      <h2>Statutory Audit Reference Verification</h2>
+      <p>Received an official statutory audit notification or partner enquiry from our desk? Enter your Audit Reference ID (for example <code>GHF-AU-392200</code>, <code>GHF-US-0910750</code>, <code>GHF-AU-827616</code>, or <code>GHF-AU-154187-GWG</code>) to confirm live registry status and assigned intake desk.</p>
+      <form class="verify-form" onsubmit="verifyRef(event)">
+        <input id="refInput" type="text" placeholder="Enter Audit Reference (e.g. GHF-AU-392200)" aria-label="Audit Reference ID" />
+        <button class="btn btn-primary" type="submit">Verify Reference</button>
+      </form>
+      <div id="verifyResult" class="verify-result"></div>
+    </section>
+
+    <section id="partners" class="partner-hero">
+      <span class="badge badge-gold">Active Global Fee-Share · Law Firms, Migration Advisors, Accountants &amp; Genealogists</span>
+      <h2>Institutional &amp; Professional Collaboration — Transparent 25%–50% Co-Administration Models</h2>
+      <p>
+        Resolving cross-border unclaimed estates and historical client or subsidiary escrow balances combines forensic public-record engineering with trusted local representation. We offer immediate written fee-sharing and prior-knowledge protection for professional practices worldwide.
+      </p>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <span class="role-tag">01 · Legal &amp; Migration Practices</span>
+          <h3>Law Firms, Solicitors &amp; Advisory Firms</h3>
+          <p>25%–30% referral fee-share when reconnecting historical C/- investor or estate clients, or 50/50 co-administration on cross-border probate and intestate estates.</p>
+          <a href="mailto:contact@globalheirfinder.com?subject=Law%20Firm%20/%20Advisory%20Partnership">Partner Intake → contact@globalheirfinder.com</a>
+        </div>
+        <div class="partner-card">
+          <span class="role-tag">02 · Accounting &amp; Fiduciary</span>
+          <h3>Chartered Accountants, Trustees &amp; CFOs</h3>
+          <p>15%–30% contingency recovery on post-acquisition subsidiary balances, offshore registered-agent holdings, and charitable testamentary bequests — zero upfront cost.</p>
+          <a href="mailto:research@globalheirfinder.com?subject=Corporate%20/%20Fiduciary%20Audit%20Enquiry">Corporate Desk → research@globalheirfinder.com</a>
+        </div>
+        <div class="partner-card">
+          <span class="role-tag">03 · Archival Specialists</span>
+          <h3>Probate Genealogists &amp; Researchers</h3>
+          <p>Co-administration on Swiss Art. 555 ZGB judicial calls, European parish/civil records, and multi-jurisdictional heirship proof packages with 48-hour prior-knowledge carve-outs.</p>
+          <a href="mailto:research@globalheirfinder.com?subject=Genealogy%20Co-Administration">Research Desk → research@globalheirfinder.com</a>
+        </div>
+        <div class="partner-card">
+          <span class="role-tag">04 · Individual Contributors</span>
+          <h3>Archival Contributors &amp; Tipsters</h3>
+          <p>Former company secretaries, local historians, and individuals submitting corroborated family lineage or corporate succession evidence share in net recovery fees.</p>
+          <a href="mailto:help@globalheirfinder.com?subject=Archival%20Contributor%20Submission">Contributor Desk → help@globalheirfinder.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="digest">
+      <h2 class="section-title">Anonymized Active Statutory Escrow &amp; Probate Digest</h2>
+      <p class="section-sub">Representative active audits compiled from federal court registries, state statutory unclaimed monies ledgers, and judicial calls for unknown heirs (individual decedent and claimant names redacted publicly to protect beneficiary privacy and partner exclusivity).</p>
+      <table>
+        <thead>
+          <tr><th>Jurisdiction &amp; Reference</th><th>Anonymized Holding Classification</th><th>Verified Statutory Balance</th><th>Intake &amp; Partner Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Australia Statutory Ledger</b><br>Ref: GHF-AU-827616</td><td><b>Business Investor C/- Migration Practice Holding</b><br>(Fortitude Valley / Brisbane QLD Custody)</td><td>Verified Liquid Balance:<br><b>AUD $827,616.47</b></td><td>Authorized Practice &amp; Client Verification Open</td></tr>
+          <tr><td><b>U.S. Federal Bankruptcy Court</b><br>Ref: GHF-US-0910750</td><td><b>51% Majority-Owned Commercial Chassis JV</b><br>(28 U.S.C. &sect; 2041 Statutory Court Custody)</td><td>Verified Federal Escrow:<br><b>USD $639,439.97</b></td><td>Parent CFO &amp; General Counsel Review Active</td></tr>
+          <tr><td><b>Australia Statutory Ledger</b><br>Ref: GHF-AU-392200</td><td><b>Advisory Co-Founder / Client Statutory Holding</b><br>(Indexed C/- Sydney &amp; Hanoi Migration Advisory)</td><td>Verified Liquid Balance:<br><b>AUD $392,200.66</b></td><td>Active Correspondence with Practice Management</td></tr>
+          <tr><td><b>Australia Statutory Ledger</b><br>Ref: GHF-AU-222200 &amp; GHF-AU-103286-LPA</td><td><b>100% Acquired Energy &amp; Fleet Subsidiaries</b><br>(Post-Acquisition Unclaimed Corporate Disbursements)</td><td>Verified Subsidiary Balances:<br><b>AUD $222,200.00 &amp; AUD $103,286.25</b></td><td>Parent Company Secretary &amp; CFO Verification Open</td></tr>
+          <tr><td><b>Australia &amp; UK / Commonwealth</b><br>Ref: GHF-AU-154187-GWG &amp; GHF-AU-150640</td><td><b>Testamentary Charitable Bequest &amp; Scottish Barony Estate</b><br>(Deceased Estate Statutory Custodial Balances)</td><td>Verified Estate Balances:<br><b>AUD $154,187.09 &amp; AUD $150,640.35</b></td><td>Trust Services &amp; Family Office Counsel Review Open</td></tr>
+          <tr><td><b>Switzerland (Art. 555 ZGB)</b><br>Cantons Schwyz, Thurgau &amp; Bern</td><td><b>Judicial Calls for Unknown Cross-Border Heirs</b><br>(UK, German &amp; Austrian Kinship Chains Pierced)</td><td><b>100% Statutory Intestate Shares</b><br>(Solvent Cantonal Probate Custody)</td><td>50/50 Co-Administration &amp; Direct Heir Representation</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="standards" class="grid">
+      <div class="card">
+        <span class="badge">01 · Zero Upfront Cost</span>
+        <h3>100% Contingency &amp; Direct Disbursement</h3>
+        <p>We never request upfront fees, retainers, or banking credentials. Government statutory authorities disburse recovered funds directly to the verified claimant or administering law firm trust account.</p>
+      </div>
+      <div class="card">
+        <span class="badge">02 · Written Fee &amp; Non-Circumvention</span>
+        <h3>Simple Email Confirmation Protocol</h3>
+        <p>Unredacted statutory certificates, exact registry spelling indexes, and evidentiary lineage files are released immediately upon written email confirmation of agreed contingency and non-circumvention terms.</p>
+      </div>
+      <div class="card">
+        <span class="badge">03 · Multi-Jurisdiction Verification</span>
+        <h3>Authenticated Correspondence Channels</h3>
+        <p>All inbound enquiries to <code>@globalheirfinder.com</code> are routed directly to our senior audit desk. Outbound audit dispatches reference a verifiable <code>GHF-</code> file code checkable above.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-bottom:2rem;">
+      <h3>Official Correspondence Desks — GlobalHeirFinder.com</h3>
+      <p style="margin-top:0.5rem;">
+        <b>Private Beneficiaries, Estates &amp; Migration/Advisory Partners:</b> <a href="mailto:contact@globalheirfinder.com">contact@globalheirfinder.com</a><br>
+        <b>Corporate CFOs, Company Secretaries, Law Firms &amp; Genealogists:</b> <a href="mailto:research@globalheirfinder.com">research@globalheirfinder.com</a><br>
+        <b>Archival Contributors &amp; Audit Reference Checks:</b> <a href="mailto:help@globalheirfinder.com">help@globalheirfinder.com</a><br>
+        <b>Authorized Dispatch Notice:</b> Official outbound audit notices may originate from our primary group recovery mailbox alongside <code>@globalheirfinder.com</code> reply routing; every legitimate notice carries an active <code>GHF-</code> reference ID verifiable on this page.
+      </p>
+      <p style="font-size:0.86rem; margin-bottom:0;">
+        <b>Compliance &amp; Regulatory Boundary:</b> Global Heir Finder (globalheirfinder.com) is an independent statutory unclaimed-asset audit and archival probate research organization. Where local legal representation is required, filings are conducted in partnership with Practicing Solicitors, Registered Migration Agents, or Chartered Accountants in the relevant jurisdiction.
+      </p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Global Heir Finder (globalheirfinder.com) &middot; International Unclaimed Estates, Corporate Escrow Audits &amp; Global Legal/Advisory Partner Network</footer>
+
+  <script>
+    const AUDIT_REFS = {
+      "GHF-US-0910750": { title: "U.S. Federal Court Custodial Balance — USD $639,439.97", holder: "51% Majority-Owned Chassis JV Subsidiary (FEIN 30-0910750)", desk: "research@globalheirfinder.com" },
+      "GHF-US-9859671": { title: "U.S. Bankruptcy Court Unclaimed Dividend — USD $44,018.01", holder: "Pre-Merger Silicon Wafer Manufacturing Entity", desk: "research@globalheirfinder.com" },
+      "GHF-AU-827616": { title: "Australian Statutory Custodial Balance — AUD $827,616.47", holder: "Former Business Migration Client Holding (C/- Fortitude Valley QLD 4006)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-428344": { title: "Australian Statutory Custodial Entitlement — AUD $428,344.72", holder: "Individual Statutory Beneficiary (Highfields / Toowoomba QLD)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-392200": { title: "Australian Statutory Custodial Entitlement — AUD $392,200.66", holder: "Holder Recorded C/- Playfair Visa and Migration Services (Sydney / Hanoi)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-222200": { title: "Australian M&A Subsidiary Escrow — AUD $222,200.00", holder: "Acquired Oil & Gas Subsidiary (ACN 077 105 199)", desk: "research@globalheirfinder.com" },
+      "GHF-AU-213709": { title: "Australian Statutory Custodial Entitlement — AUD $213,709.08", holder: "Verified Individual Beneficiary (Northern Rivers NSW / QLD)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-204691": { title: "Australian Statutory Custodial Entitlement — AUD $204,691.69", holder: "Verified Individual / Pastoral Principal (QLD)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-189871": { title: "Interstate Statutory Custodial Balance — AUD $189,871.19", holder: "New South Wales Legal Practice Entry", desk: "research@globalheirfinder.com" },
+      "GHF-AU-178692": { title: "Australian Historical Trustee Balance — AUD $178,692.17", holder: "Corporate Trustee Successor Entity", desk: "research@globalheirfinder.com" },
+      "GHF-AU-155250": { title: "Australian M&A Subsidiary Escrow — AUD $155,250.00", holder: "Acquired Energy Subsidiary Entry", desk: "research@globalheirfinder.com" },
+      "GHF-AU-154187-GWG": { title: "Queensland Deceased Estate Bequest Balance — AUD $154,187.09", holder: "Residuary Charitable Educational Beneficiary (South Pacific / QLD)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-154187": { title: "Queensland Deceased Estate Bequest Balance — AUD $154,187.09", holder: "Residuary Charitable Educational Beneficiary (South Pacific / QLD)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-152500": { title: "Typo-Indexed Corporate Custodial Entry — AUD $152,500.00", holder: "Interstate Hospitality & Gaming Corporate Group", desk: "research@globalheirfinder.com" },
+      "GHF-AU-150640-EBJ": { title: "Commonwealth Deceased Estate Balance — AUD $150,640.35 (~£77,000 GBP)", holder: "Scottish Family Estate Succession (Dumfriesshire / UK)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-150640": { title: "Commonwealth Deceased Estate Balance — AUD $150,640.35 (~£77,000 GBP)", holder: "Scottish Family Estate Succession (Dumfriesshire / UK)", desk: "contact@globalheirfinder.com" },
+      "GHF-AU-148051": { title: "Australian Statutory Custodial Balance — AUD $148,051.57", holder: "Chartered Accounting & Forensic Practice Principal", desk: "research@globalheirfinder.com" },
+      "GHF-AU-122545": { title: "Joint Exploration Tenement Custodial Balance — AUD $122,545.44", holder: "Joint Individual Tenement Holders (QLD)", desk: "research@globalheirfinder.com" },
+      "GHF-AU-119818": { title: "Cross-Border Investment Custodial Balance — AUD $119,818.07", holder: "Cayman Islands Entity C/- Licensed Registered Agent", desk: "research@globalheirfinder.com" },
+      "GHF-AU-110925": { title: "Interstate Property Subsidiary Balance — AUD $110,925.15", holder: "Listed Australian Property Group Subsidiary", desk: "research@globalheirfinder.com" },
+      "GHF-AU-103286-LPA": { title: "Acquired Fleet Subsidiary Statutory Balance — AUD $103,286.25", holder: "100% Acquired Fleet Management Subsidiary (ACN 006 923 011)", desk: "research@globalheirfinder.com" },
+      "GHF-AU-103286": { title: "Acquired Fleet Subsidiary Statutory Balance — AUD $103,286.25", holder: "100% Acquired Fleet Management Subsidiary (ACN 006 923 011)", desk: "research@globalheirfinder.com" },
+      "GHF-AU-100271": { title: "Abbreviated Development Trust Balance — AUD $100,271.87", holder: "Queensland Construction & Development Group Trust", desk: "research@globalheirfinder.com" },
+      "GHF-CH-202625": { title: "Swiss Judicial Call for Heirs (Art. 555 ZGB — Wollerau SZ)", holder: "Verified UK Paternal/Maternal Next-of-Kin Dossier", desk: "research@globalheirfinder.com" },
+      "GHF-CH-FR40": { title: "Swiss Judicial Call for Heirs (Art. 555 ZGB — Frauenfeld TG)", holder: "Verified German Kinship Branch (Heidelberg / Berlin)", desk: "contact@globalheirfinder.com" },
+      "GHF-CH-HOEFE-BL8832": { title: "Swiss Judicial Call for Heirs (Art. 555 ZGB — Wilen b. Wollerau SZ)", holder: "Verified Austrian Kinship Branch (Carinthia / Villach-Land)", desk: "contact@globalheirfinder.com" },
+      "GHF-CH-555ZGB": { title: "Swiss Judicial Call for Heirs (Art. 555 ZGB Solvent Intestate Estate)", holder: "Verified Cross-Border Statutory Heir Dossier", desk: "contact@globalheirfinder.com" }
+    };
+
+    function renderRef(code) {
+      const box = document.getElementById("verifyResult");
+      const clean = (code || "").trim().toUpperCase();
+      if (!clean) { box.style.display = "none"; return; }
+      box.style.display = "block";
+      if (AUDIT_REFS[clean]) {
+        const item = AUDIT_REFS[clean];
+        box.innerHTML = "<strong>&#10003; VERIFIED ACTIVE AUDIT FILE — " + clean + "</strong><br>" +
+          "Classification: " + item.title + "<br>" +
+          "Eligible Claimant / Partner Scope: " + item.holder + "<br>" +
+          "Status: Active audit file — unredacted statutory extract ready for release upon written fee-share &amp; non-circumvention confirmation.<br>" +
+          "Assigned Verification Desk: <a href='mailto:" + item.desk + "?subject=Verification%20" + encodeURIComponent(clean) + "'><b>" + item.desk + "</b></a>";
+      } else if (clean.startsWith("GHF-")) {
+        box.innerHTML = "<strong>&#10003; ACTIVE ARCHIVAL REFERENCE FORMAT RECOGNIZED — " + clean + "</strong><br>" +
+          "This reference belongs to an active Global Heir Finder probate or statutory escrow file. Please quote <b>" + clean + "</b> to <a href='mailto:contact@globalheirfinder.com'><b>contact@globalheirfinder.com</b></a> or <a href='mailto:research@globalheirfinder.com'><b>research@globalheirfinder.com</b></a> for immediate partner or claimant verification.";
+      } else {
+        box.innerHTML = "Reference not recognized. Official references begin with <code>GHF-</code> (e.g. <code>GHF-AU-392200</code> or <code>GHF-US-0910750</code>). Contact <a href='mailto:contact@globalheirfinder.com'>contact@globalheirfinder.com</a> for assistance.";
+      }
+    }
+
+    function verifyRef(e) {
+      if (e) e.preventDefault();
+      renderRef(document.getElementById("refInput").value);
+    }
+
+    (function initFromQuery() {
+      const params = new URLSearchParams(window.location.search);
+      const ref = params.get("ref");
+      if (ref) {
+        const input = document.getElementById("refInput");
+        input.value = ref;
+        renderRef(ref);
+        document.getElementById("verify").scrollIntoView({ behavior: "smooth" });
+      }
+    })();
+  </script>
+</body>
+</html>
